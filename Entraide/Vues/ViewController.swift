@@ -28,12 +28,12 @@ class ViewController: UIViewController, UISearchBarDelegate {
         UIApplication.shared.beginIgnoringInteractionEvents()
         
         let activityIndicator = UIActivityIndicatorView()
-       // activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorView.Style.gray
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorView.Style.gray
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.startAnimating()
         
-       //viewaddSubview(activityIndicator)
+        self.viewaddSubview(activityIndicator)
         
         searchBar.resignFirstResponder()
         dismiss(animated: true, completion: nil)
@@ -53,34 +53,21 @@ class ViewController: UIViewController, UISearchBarDelegate {
                 print("ERROR")
             }
             else{
-//                let annotations = self.myMapView.annotations
-//                //self.myMapView.removeAnnotation(annotations)
-//
-//                let latitude = response?.boundingRegion.center.latitude
-//                let longitude = response?.boundingRegion.center.longitude
+                let annotations = self.myMapView.annotations
+                self.myMapView.removeAnnotation(annotations as! MKAnnotation)
                 
-                //let annotation = MKPointAnnotation()
-               // annotation.title = searchBar.text
-               // annotation.coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
-//                self.myMapView.addAnnotation(annotation)
-                
-                // Zoom sur la carte
-                let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-                let region = MKCoordinateRegion(center: location, span: span)
-                map.setRegion(region, animated: true)
+                let latitude = response?.boundingRegion.center.latitude
+                let longitude = response?.boundingRegion.center.longitude
                 
                 let annotation = MKPointAnnotation()
-                annotation.coordinate = location
-                annotation.title = "Ici c'est Simplon"
-                annotation.subtitle = "Formation Swift"
-                map.addAnnotation(annotation)
+                annotation.title = searchBar.text
+                annotation.coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
+                self.myMapView.addAnnotation(annotation)
                 
-                
-                
-                //let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-                //let span = MKCoordinateSpanMake (0.1, 0.1)
-             //   let region = MKCoordinateRegionMake (coordinate, span)
-              //  self.myMapView.setRegion(region, animated: true)
+                let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+                let span = MKCoordinateSpanMake (0.1, 0.1)
+                let region = MKCoordinateRegionMake (coordinate, span)
+                self.myMapView.setRegion(region, animated: true)
                 
                 
             }
