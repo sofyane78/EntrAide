@@ -22,7 +22,9 @@
                                 <rect key="frame" x="138" y="309" width="158" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <state key="normal" title="Natacha"/>
+                                <state key="normal" title="Natacha">
+                                    <color key="titleColor" red="1" green="0.11489656500000001" blue="0.1200433202" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
