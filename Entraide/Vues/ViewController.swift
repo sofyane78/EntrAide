@@ -65,6 +65,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
 //                self.myMapView.addAnnotation(annotation)
                 
                 // Zoom sur la carte
+
                 let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
                 let region = MKCoordinateRegion(center: location, span: span)
                 map.setRegion(region, animated: true)
@@ -74,7 +75,6 @@ class ViewController: UIViewController, UISearchBarDelegate {
                 annotation.title = "Ici c'est Simplon"
                 annotation.subtitle = "Formation Swift"
                 map.addAnnotation(annotation)
-                
                 
                 
                 //let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
