@@ -21,6 +21,9 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZcC-5e-8MA">
                                 <rect key="frame" x="0.0" y="137" width="414" height="492"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tNH-m8-DaF"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -28,9 +31,16 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="SLh-Rr-uTB">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="search" id="f0t-uQ-q10"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="search" id="f0t-uQ-q10">
+                            <connections>
+                                <action selector="searchButton:" destination="BYZ-38-t0r" id="QSp-i9-tld"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myMapView" destination="ZcC-5e-8MA" id="G1u-IK-FUi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
