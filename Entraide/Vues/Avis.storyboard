@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7cb-d9-Db2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Avis View Controller-->
+        <scene sceneID="ja4-mx-zlS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JwP-ZV-ron" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="7cb-d9-Db2" userLabel="Avis View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vg5-oI-OpE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQM-cB-wfK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="lba-HT-o0v"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cVb-Jq-wkY">
+                                <rect key="frame" x="0.0" y="88" width="414" height="204"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6I4-fz-ayY">
+                                <rect key="frame" x="148" y="322" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2By-SX-4jw"/>
+                                </constraints>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cVb-Jq-wkY" firstAttribute="trailing" secondItem="Umd-Au-zgR" secondAttribute="trailing" id="0MN-yM-5Hk"/>
+                            <constraint firstItem="Umd-Au-zgR" firstAttribute="bottom" secondItem="6I4-fz-ayY" secondAttribute="bottom" constant="510" id="E7M-iF-jAm"/>
+                            <constraint firstItem="6I4-fz-ayY" firstAttribute="leading" secondItem="Umd-Au-zgR" secondAttribute="leading" constant="150" id="F5T-bC-jyM"/>
+                            <constraint firstItem="6I4-fz-ayY" firstAttribute="top" secondItem="cVb-Jq-wkY" secondAttribute="bottom" constant="30" id="SXt-al-LxD"/>
+                            <constraint firstItem="cVb-Jq-wkY" firstAttribute="leading" secondItem="Umd-Au-zgR" secondAttribute="leading" id="Vpf-UX-CsB"/>
+                            <constraint firstItem="cVb-Jq-wkY" firstAttribute="top" secondItem="aQM-cB-wfK" secondAttribute="bottom" id="bnH-CR-Xsb"/>
+                            <constraint firstItem="aQM-cB-wfK" firstAttribute="leading" secondItem="cVb-Jq-wkY" secondAttribute="leading" id="cmy-Fq-IUu"/>
+                            <constraint firstItem="aQM-cB-wfK" firstAttribute="trailing" secondItem="cVb-Jq-wkY" secondAttribute="trailing" id="sFb-Vl-Ab3"/>
+                            <constraint firstItem="aQM-cB-wfK" firstAttribute="top" secondItem="Umd-Au-zgR" secondAttribute="top" id="vIW-Pq-CoA"/>
+                            <constraint firstItem="aQM-cB-wfK" firstAttribute="centerX" secondItem="6I4-fz-ayY" secondAttribute="centerX" id="wZ3-F9-tbA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Umd-Au-zgR"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2597.1014492753625" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+</document>
