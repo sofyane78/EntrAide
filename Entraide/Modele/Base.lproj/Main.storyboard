@@ -39,7 +39,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="myMapView" destination="ZcC-5e-8MA" id="G1u-IK-FUi"/>
+                        <outlet property="map" destination="ZcC-5e-8MA" id="G1u-IK-FUi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
