@@ -35,5 +35,64 @@
             </objects>
             <point key="canvasLocation" x="-57.971014492753625" y="133.92857142857142"/>
         </scene>
+        <!--Profil View Controller-->
+        <scene sceneID="JGK-7I-sYu">
+            <objects>
+                <viewController id="Hgv-Tv-lCa" userLabel="Profil View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9di-Rd-5Cd" userLabel="Profil View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3d7-Qp-im2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XST-uZ-Lwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1599" y="579"/>
+        </scene>
+        <!--Avis View Controller-->
+        <scene sceneID="uh6-br-fq3">
+            <objects>
+                <viewController id="zQb-hw-snA" userLabel="Avis View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FNN-nN-24m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J68-rB-JqE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="U9V-nZ-WdT"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jcJ-5X-BWI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="204"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zm4-sv-PHC">
+                                <rect key="frame" x="148" y="322" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ts0-Li-O5P"/>
+                                </constraints>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J68-rB-JqE" firstAttribute="trailing" secondItem="jcJ-5X-BWI" secondAttribute="trailing" id="2TB-wm-oCP"/>
+                            <constraint firstItem="zm4-sv-PHC" firstAttribute="top" secondItem="jcJ-5X-BWI" secondAttribute="bottom" constant="30" id="4Im-8t-9rm"/>
+                            <constraint firstItem="jcJ-5X-BWI" firstAttribute="trailing" secondItem="bE0-ZH-0dx" secondAttribute="trailing" id="HbW-rD-6Fc"/>
+                            <constraint firstItem="bE0-ZH-0dx" firstAttribute="bottom" secondItem="zm4-sv-PHC" secondAttribute="bottom" constant="510" id="WcS-xW-xhj"/>
+                            <constraint firstItem="zm4-sv-PHC" firstAttribute="leading" secondItem="bE0-ZH-0dx" secondAttribute="leading" constant="150" id="b4t-wu-udg"/>
+                            <constraint firstItem="J68-rB-JqE" firstAttribute="leading" secondItem="jcJ-5X-BWI" secondAttribute="leading" id="bzY-tG-RgO"/>
+                            <constraint firstItem="J68-rB-JqE" firstAttribute="top" secondItem="bE0-ZH-0dx" secondAttribute="top" id="nwg-wf-Xtv"/>
+                            <constraint firstItem="jcJ-5X-BWI" firstAttribute="top" secondItem="J68-rB-JqE" secondAttribute="bottom" id="tsz-Xe-WMl"/>
+                            <constraint firstItem="J68-rB-JqE" firstAttribute="centerX" secondItem="zm4-sv-PHC" secondAttribute="centerX" id="tsz-t7-y6q"/>
+                            <constraint firstItem="jcJ-5X-BWI" firstAttribute="leading" secondItem="bE0-ZH-0dx" secondAttribute="leading" id="uXY-HQ-x7s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bE0-ZH-0dx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6YF-1H-C5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776.81159420289862" y="133.92857142857142"/>
+        </scene>
     </scenes>
 </document>
