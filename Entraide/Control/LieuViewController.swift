@@ -14,7 +14,7 @@ class LieuViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+       /*
         lieux.append(lieu1)
         lieux.append(lieu2)
         lieux.append(lieu3)
@@ -27,6 +27,7 @@ class LieuViewController: UIViewController
         lieux.append(lieu10)
         lieux.append(lieu11)
         
+        listeAvis = [avis1, avis2, avis3]
         listeAvis.append(avis1)
         listeAvis.append(avis2)
         listeAvis.append(avis3)
@@ -52,8 +53,11 @@ class LieuViewController: UIViewController
         listeAvis.append(avis23)
         listeAvis.append(avis24)
         listeAvis.append(avis25)
+        */
         
         // Do any additional setup after loading the view.
+        
+        
     }
     
 
