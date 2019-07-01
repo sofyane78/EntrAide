@@ -10,57 +10,64 @@ import UIKit
 
 class LieuViewController: UIViewController
 {
-
+    @IBOutlet weak var photos: UIImageView!
+    @IBOutlet weak var nomLieu: UILabel!
+    @IBOutlet weak var note: UILabel!
+    @IBOutlet weak var adresse: UILabel!
+    @IBOutlet weak var descriptionLieu: UITextView!
+    @IBOutlet weak var criteres: UICollectionView!
+    var i = 0
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-       /*
-        lieux.append(lieu1)
-        lieux.append(lieu2)
-        lieux.append(lieu3)
-        lieux.append(lieu4)
-        lieux.append(lieu5)
-        lieux.append(lieu6)
-        lieux.append(lieu7)
-        lieux.append(lieu8)
-        lieux.append(lieu9)
-        lieux.append(lieu10)
-        lieux.append(lieu11)
         
-        listeAvis = [avis1, avis2, avis3]
-        listeAvis.append(avis1)
-        listeAvis.append(avis2)
-        listeAvis.append(avis3)
-        listeAvis.append(avis4)
-        listeAvis.append(avis5)
-        listeAvis.append(avis6)
-        listeAvis.append(avis7)
-        listeAvis.append(avis8)
-        listeAvis.append(avis9)
-        listeAvis.append(avis10)
-        listeAvis.append(avis11)
-        listeAvis.append(avis12)
-        listeAvis.append(avis13)
-        listeAvis.append(avis14)
-        listeAvis.append(avis15)
-        listeAvis.append(avis16)
-        listeAvis.append(avis17)
-        listeAvis.append(avis18)
-        listeAvis.append(avis19)
-        listeAvis.append(avis20)
-        listeAvis.append(avis21)
-        listeAvis.append(avis22)
-        listeAvis.append(avis23)
-        listeAvis.append(avis24)
-        listeAvis.append(avis25)
-        */
+        //pour test
+        let tempLieu = "L'Escale"
+        //
         
-        // Do any additional setup after loading the view.
+        while lieux[i].nom != tempLieu
+        {
+            i += 1
+        }
+
+        nomLieu.text = tempLieu
+        note.text = lieux[i].note
+        adresse.text = lieux[i].adresse
+        descriptionLieu.text = lieux[i].description
         
+        photos.image = lieux[i].photos[0]
+        photos.contentMode = .scaleAspectFit
+        
+        //criteres.dataSource
+        
+        class CriteresTableViewController: UICollectionViewController
+        {
+            override func numberOfSections(in collectionView: UICollectionView) -> Int
+            {
+                return 4
+            }
+            
+            override func collectionView(_ collectionView: UICollectionView,
+                                         numberOfItemsInSection section: Int) -> Int
+            {
+                return 10
+            }
+            
+            override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath)
+                
+                //cell.imgView.image = lieux[0].photos[0]
+                return cell
+            }
+        }
         
     }
-    
 
+
+    
+    
+    
     /*
     // MARK: - Navigation
 

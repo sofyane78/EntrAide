@@ -32,7 +32,7 @@ var lieux = [
                        longitude: 2.4330908,
                        description: "Petit Resto convivial, qualité/prix raisonnable",
                        note:  "⭐️⭐️⭐️⭐️",
-                       criteres: [UIImage(named:"critere1"), UIImage(named:"critere2"), UIImage(named:"critere3")],
+                       criteres: [UIImage(named:"critere1"), UIImage(named:"critere2"), UIImage(named:"critere3"), UIImage(named:"critere4")],
                        photos: [UIImage(named:"1"), UIImage(named:"2"), UIImage(named:"3")]),
 
     InfosLieu( nom: "La CaVe",
@@ -140,8 +140,9 @@ struct AvisStruct
     var date: String
     var note: String
     var fauteuil: Bool
-    var sourd: Bool
-    var aveugle: Bool
+    var calme: Bool
+    var tamisee: Bool
+    var securise : Bool
 }
 
 var listeAvisStruct = [
@@ -151,8 +152,9 @@ var listeAvisStruct = [
          date: "06.07.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Victor",
@@ -160,8 +162,9 @@ var listeAvisStruct = [
          date: "06.07.2019",
          note: "⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Felix",
@@ -169,8 +172,9 @@ var listeAvisStruct = [
          date: "05.07.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Bee",
@@ -178,8 +182,9 @@ var listeAvisStruct = [
          date: "04.07.2019",
          note: "⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Agnès",
@@ -187,8 +192,9 @@ var listeAvisStruct = [
          date: "04.07.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Alisson",
@@ -196,8 +202,9 @@ var listeAvisStruct = [
          date: "04.07.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Boris",
@@ -205,8 +212,9 @@ var listeAvisStruct = [
          date: "03.07.2019",
          note: "",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "José",
@@ -214,8 +222,9 @@ var listeAvisStruct = [
          date: "03.07.2019",
          note: "⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Paul",
@@ -223,8 +232,9 @@ var listeAvisStruct = [
          date: "03.07.2019",
          note: "⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Emmanuelle",
@@ -232,8 +242,9 @@ var listeAvisStruct = [
          date: "02.07.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu:  "L'Escale",
          user: "Jacques",
@@ -241,8 +252,9 @@ var listeAvisStruct = [
          date: "02.07.2019",
          note: "⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Valentin",
@@ -250,8 +262,9 @@ var listeAvisStruct = [
          date: "02.07.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Frank",
@@ -259,8 +272,9 @@ var listeAvisStruct = [
          date: "01.07.2019",
          note: "⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Sara",
@@ -268,8 +282,9 @@ var listeAvisStruct = [
          date: "01.07.2019",
          note: "⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Marie",
@@ -277,8 +292,9 @@ var listeAvisStruct = [
          date: "01.07.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Sophie",
@@ -286,8 +302,9 @@ var listeAvisStruct = [
          date: "30.06.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Marc",
@@ -295,8 +312,9 @@ var listeAvisStruct = [
          date: "30.06.2019",
          note: "⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Thomas",
@@ -304,8 +322,9 @@ var listeAvisStruct = [
          date: "30.06.2019",
          note: "⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "L'Escale",
          user: "Yoshi",
@@ -313,8 +332,9 @@ var listeAvisStruct = [
          date: "29.06.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "La CaVe",
          user: "j'ai mangé dans ce restaurant hier soir et franchement, j'ai passé un super moment! Repas copieux et alléchant, personnel agréable et très avenant. Franchement, je vous le conseille vivement. Vous vivrez un excellent moment convivial et vous y reviendrez Merci encore à l'intégralité de l'équipe pour leur amabilité, leurs conseils, leur disponibilité. Vous avez embellit ma soirée qui était déjà très belle malgré le temps pluvieux.",
@@ -322,8 +342,9 @@ var listeAvisStruct = [
          date: "07.07.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: false,
-         aveugle: true),
+         calme: false,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "La CaVe",
          user: "Eric",
@@ -331,8 +352,9 @@ var listeAvisStruct = [
          date: "06.07.2019",
          note: "⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: false,
-         aveugle: true),
+         calme: false,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "La CaVe",
          user: "Jean",
@@ -340,8 +362,9 @@ var listeAvisStruct = [
          date: "05.07.2019",
          note: "⭐️⭐️",
          fauteuil: true,
-         sourd: false,
-         aveugle: true),
+         calme: false,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "La CaVe",
          user: "Eric",
@@ -349,8 +372,9 @@ var listeAvisStruct = [
          date: "04.07.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: false,
-         aveugle: true),
+         calme: false,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "Théâtre Berthelot",
          user: "Eric",
@@ -358,8 +382,9 @@ var listeAvisStruct = [
          date: "30.06.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true),
+         calme: true,
+         tamisee: true,
+         securise: true),
     
     AvisStruct(lieu: "Théâtre Berthelot",
          user: "Jean",
@@ -367,6 +392,7 @@ var listeAvisStruct = [
          date: "27.06.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
-         sourd: true,
-         aveugle: true)
+         calme: true,
+         tamisee: true,
+         securise: true)
 ]
