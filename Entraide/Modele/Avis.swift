@@ -11,5 +11,14 @@ import UIKit
 
 struct Avis {
     let nameAvis: String = ""
+    
 
 }
+
+struct critere {
+    var fauteuil: Bool = false
+    var securise: Bool = false
+    var calme: Bool = false
+    var tamisee: Bool = false
+}
+
