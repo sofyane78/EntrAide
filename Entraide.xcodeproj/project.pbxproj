@@ -17,6 +17,7 @@
 		FA53E63522C669DB0077B1E3 /* Avis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA53E63422C669DB0077B1E3 /* Avis.storyboard */; };
 		FA53E63722C66A140077B1E3 /* Lieu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA53E63622C66A140077B1E3 /* Lieu.storyboard */; };
 		FA53E63922C66AE20077B1E3 /* Profil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA53E63822C66AE20077B1E3 /* Profil.storyboard */; };
+		FA53E63D22C9FEA80077B1E3 /* Avis.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53E63C22C9FEA80077B1E3 /* Avis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FA53E63422C669DB0077B1E3 /* Avis.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Avis.storyboard; sourceTree = "<group>"; };
 		FA53E63622C66A140077B1E3 /* Lieu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lieu.storyboard; sourceTree = "<group>"; };
 		FA53E63822C66AE20077B1E3 /* Profil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profil.storyboard; sourceTree = "<group>"; };
+		FA53E63C22C9FEA80077B1E3 /* Avis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		6E847BDB22C61DAB000D8C50 /* Modele */ = {
 			isa = PBXGroup;
 			children = (
+				FA53E63C22C9FEA80077B1E3 /* Avis.swift */,
 			);
 			path = Modele;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA53E63D22C9FEA80077B1E3 /* Avis.swift in Sources */,
 				6E847BDE22C669A5000D8C50 /* donnees.swift in Sources */,
 				6EF6CEDC22CA080D005F60EE /* LieuViewController.swift in Sources */,
 				D55932E122C617E200B7208C /* ViewController.swift in Sources */,
