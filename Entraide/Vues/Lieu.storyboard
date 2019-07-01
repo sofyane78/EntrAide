@@ -26,7 +26,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="423" height="396"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="pBd-rm-Zou" customClass="photo">
+                                        <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="pBd-rm-Zou" customClass="photo">
                                             <rect key="frame" x="0.0" y="0.0" width="500" height="240"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="240" id="zFm-FH-oRG"/>
@@ -86,6 +86,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="500" height="281"/>
+        <image name="6" width="399" height="284"/>
     </resources>
 </document>
