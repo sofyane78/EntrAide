@@ -42,19 +42,22 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adresse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlU-BV-yAS">
-                                            <rect key="frame" x="8" y="272" width="394" height="21"/>
+                                            <rect key="frame" x="8" y="272" width="394" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a2X-Ny-cvI">
-                                            <rect key="frame" x="8" y="299" width="394" height="46"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a2X-Ny-cvI">
+                                            <rect key="frame" x="8" y="294" width="394" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="1LI-HY-FLV"/>
+                                            </constraints>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                                         </textView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-Mo-xeF">
-                                            <rect key="frame" x="308" y="249" width="94" height="21"/>
+                                            <rect key="frame" x="308" y="249.5" width="94" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -66,50 +69,22 @@
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                         </button>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QaA-mP-Fna">
-                                            <rect key="frame" x="81" y="353" width="249" height="51"/>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoSecurise" translatesAutoresizingMaskIntoConstraints="NO" id="fqv-xx-25x" userLabel="securise">
+                                            <rect key="frame" x="22" y="353" width="56" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z5t-Lk-44G">
-                                                <size key="itemSize" width="50" height="50"/>
-                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            </collectionViewFlowLayout>
-                                            <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="fJp-FK-SXb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </view>
-                                                </collectionViewCell>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="k9p-KD-Ei1">
-                                                    <rect key="frame" x="66.5" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </view>
-                                                </collectionViewCell>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="OJl-Hu-xrE">
-                                                    <rect key="frame" x="132.5" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </view>
-                                                </collectionViewCell>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NiQ-Jl-deX">
-                                                    <rect key="frame" x="199" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </view>
-                                                </collectionViewCell>
-                                            </cells>
-                                        </collectionView>
+                                        </imageView>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoFauteuil" translatesAutoresizingMaskIntoConstraints="NO" id="3gd-xb-czH" userLabel="fauteuil">
+                                            <rect key="frame" x="111" y="353" width="56" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoCalme" translatesAutoresizingMaskIntoConstraints="NO" id="SfR-rZ-G9I" userLabel="calme">
+                                            <rect key="frame" x="205" y="353" width="56" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoTamisee" translatesAutoresizingMaskIntoConstraints="NO" id="WcR-Zu-Hq2" userLabel="tamisee">
+                                            <rect key="frame" x="308" y="353" width="56" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.86320029145077726" green="0.86320029145077726" blue="0.86320029145077726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
@@ -146,12 +121,14 @@
                     </view>
                     <connections>
                         <outlet property="adresse" destination="hlU-BV-yAS" id="PlK-zt-ds2"/>
-                        <outlet property="criteres" destination="QaA-mP-Fna" id="Uby-F7-sBn"/>
+                        <outlet property="calme" destination="SfR-rZ-G9I" id="Ng0-fZ-KgB"/>
                         <outlet property="descriptionLieu" destination="a2X-Ny-cvI" id="Eqc-sT-bBM"/>
+                        <outlet property="fauteuil" destination="3gd-xb-czH" id="nSd-vC-TXM"/>
+                        <outlet property="lieu" destination="WcR-Zu-Hq2" id="hO3-gj-ZTt"/>
                         <outlet property="nomLieu" destination="JfR-lf-IQd" id="ANg-wq-Q1q"/>
                         <outlet property="note" destination="VbM-Mo-xeF" id="w1d-aH-xLy"/>
                         <outlet property="photos" destination="pBd-rm-Zou" id="Ov3-vy-MMK"/>
-                        <outletCollection property="photos" destination="QaA-mP-Fna" collectionClass="NSMutableArray" id="djp-Qn-fPW"/>
+                        <outlet property="securise" destination="fqv-xx-25x" id="Qm4-Yt-gty"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X78-j8-Z2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -159,4 +136,10 @@
             <point key="canvasLocation" x="3434.7826086956525" y="-600"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logoCalme" width="1600" height="1600"/>
+        <image name="logoFauteuil" width="170" height="194"/>
+        <image name="logoSecurise" width="225" height="225"/>
+        <image name="logoTamisee" width="225" height="225"/>
+    </resources>
 </document>

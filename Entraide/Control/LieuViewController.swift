@@ -8,13 +8,19 @@
 
 import UIKit
 
-class LieuViewController: UITableViewController
+class LieuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
     @IBOutlet weak var photos: UIImageView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nomLieu: UILabel!
     @IBOutlet weak var note: UILabel!
     @IBOutlet weak var adresse: UILabel!
     @IBOutlet weak var descriptionLieu: UITextView!
+    @IBOutlet weak var securise: UIImageView!
+    @IBOutlet weak var fauteuil: UIImageView!
+    @IBOutlet weak var calme: UIImageView!
+    @IBOutlet weak var lieu: UIImageView!
+    
     
     var i = 0
     
@@ -39,22 +45,30 @@ class LieuViewController: UITableViewController
         photos.image = lieux[i].photos[0]
         photos.contentMode = .scaleAspectFit
 
-
+        if lieux[i].securise
+        {
+            securise.isHidden = false
+        }
+        
+        if lieux[i].calme
+        {
+            calme.isHidden = false
+        }
         
     }
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 10
     }
     
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "commentaires", for: indexPath)
 

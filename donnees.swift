@@ -21,7 +21,9 @@ struct InfosLieu
     var longitude: Double
     var description: String
     var note: String
-    var criteres: [UIImage?]  = []
+    var calme: Bool
+    var tamisee: Bool
+    var securise : Bool
     var photos: [UIImage?]  = []
 }
 
@@ -32,7 +34,9 @@ var lieux = [
                        longitude: 2.4330908,
                        description: "Petit Resto convivial, qualité/prix raisonnable",
                        note:  "⭐️⭐️⭐️⭐️",
-                       criteres: [UIImage(named:"critere1"), UIImage(named:"critere2"), UIImage(named:"critere3"), UIImage(named:"critere4")],
+                       calme: true,
+                       tamisee : true,
+                       securise : true,
                        photos: [UIImage(named:"1"), UIImage(named:"2"), UIImage(named:"3")]),
 
     InfosLieu( nom: "La CaVe",
@@ -41,7 +45,9 @@ var lieux = [
                        longitude: 2.4340799999999945,
                        description: "Établissement ouvert: 10:30 – 00:00/nCe bistro avec terrasse dans les arbres offre une cuisine créative, des brunchs et des rencontres vigneronnes.",
                        note:  "⭐️⭐️⭐️",
-                       criteres: [UIImage(named:"critere1"),  UIImage(named:"critere3")],
+                       calme: true,
+                       tamisee : false,
+                       securise : true,
                        photos: [UIImage(named:"4"),  UIImage(named:"5")]),
 
     InfosLieu( nom: "Le Jardin De Montreuil",
@@ -50,7 +56,9 @@ var lieux = [
                        longitude: 2.4347999999999956,
                        description: "Ce restaurant sert cuisine inventive et brunch dans un décor de bistrot rétro avec cheminée et patio ombragé.",
                        note:  "",
-                       criteres: [UIImage(named:"critere1")],
+                       calme: true,
+                       tamisee : true,
+                       securise : true,
                        photos: [UIImage(named:"6")]),
 
 
@@ -60,7 +68,9 @@ var lieux = [
                        longitude: 2.287592000000018,
                        description: "Ce théâtre moderne de 210 places accueille des spectacles divers, des séances jeune public et des festivals.",
                        note:  "⭐️⭐️",
-                       criteres: [UIImage(named:"critere1"),  UIImage(named:"critere2"),  UIImage(named:"critere3")],
+                       calme: true,
+                       tamisee : true,
+                       securise : true,
                        photos: [UIImage(named:"7")]),
 
     InfosLieu( nom: "Théâtre Atelier Montreuil",
@@ -69,7 +79,9 @@ var lieux = [
                        longitude: 2.433672,
                        description: "Salle de spectacles et cours de théâtre",
                        note:  "⭐️⭐️⭐️⭐️",
-                       criteres: [UIImage(named:"critere2"),  UIImage(named:"critere3")],
+                       calme: true,
+                       tamisee : true,
+                       securise : true,
                        photos: [UIImage(named:"9")]),
 
 
@@ -79,7 +91,9 @@ var lieux = [
                        longitude: 2.434529999999995,
                        description: "Piscine enfant de 25 m, et piscine olympique de 50 m",
                        note:  "⭐️⭐️⭐️",
-                       criteres: [UIImage(named:"critere1"),  UIImage(named:"critere2"),  UIImage(named:"critere3")],
+                       calme: true,
+                       tamisee : true,
+                       securise : true,
                        photos: [UIImage(named:"8")]),
 
     InfosLieu( nom: "Parc départemental Jean-Moulin - Les Guilands",
@@ -88,7 +102,9 @@ var lieux = [
                        longitude: 2.4274962,
                        description: "Un grand parc au porte de Paris. De beaux points de vue. Très arboré avec des espaces naturels préservés. Plusieurs aires de jeux bien équipées. Accessible en métro et bus. De grands espaces verts pour jouer ou s'asseoir.",
                        note:  "⭐️⭐️⭐️⭐️",
-                       criteres: [UIImage(named:"critere1"),  UIImage(named:"critere2"),  UIImage(named:"critere3")],
+                       calme: true,
+                       tamisee : true,
+                       securise : true,
                        photos: [UIImage(named:"10")]),
 
     InfosLieu( nom: "L'Île de Robinson",
@@ -97,7 +113,9 @@ var lieux = [
                        longitude: 2.4339977,
                        description: "Parc d'intérieur pour les enfants",
                        note:  "⭐️⭐️",
-                       criteres: [UIImage(named:"critere2")],
+                       calme: true,
+                       tamisee : true,
+                       securise : true,
                        photos: [UIImage(named:"11")]),
 
     InfosLieu( nom: "O'Tacos Chatelet",
@@ -106,7 +124,9 @@ var lieux = [
                        longitude: 2.3478599999999687,
                        description: "Restaurant de tacos",
                        note:  "⭐️⭐️⭐️⭐️",
-                       criteres: [UIImage(named:"critere1"),  UIImage(named:"critere2"),  UIImage(named:"critere3")],
+                       calme: true,
+                       tamisee : true,
+                       securise : true,
                        photos: [UIImage(named:"12")]),
 
     InfosLieu( nom: "Théâtre du Châtelet",
@@ -115,7 +135,9 @@ var lieux = [
                         longitude: 2.3456255,
                         description: "Récitals, comédies musicales et concerts variés dans une somptueuse salle de 1862 avec coupole et dorures.",
                         note:  "⭐️⭐️⭐️⭐️",
-                        criteres: [UIImage(named:"critere1"),  UIImage(named:"critere3")],
+                        calme: true,
+                        tamisee : true,
+                        securise : true,
                         photos: [UIImage(named:"13")]),
 
     InfosLieu( nom: "Tour Saint-Jacques",
@@ -124,7 +146,9 @@ var lieux = [
                         longitude: 2.3487609,
                         description: "Unique partie restante d'une église du XVIe siècle détruite pendant la Révolution française.",
                         note:  "⭐️⭐️⭐️⭐️",
-                        criteres: [UIImage(named:"critere2"),  UIImage(named:"critere3")],
+                        calme: true,
+                        tamisee : true,
+                        securise : true,
                         photos: [UIImage(named:"14")])
 ]
 

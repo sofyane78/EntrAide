@@ -14,6 +14,7 @@
 		D55932E422C617E200B7208C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55932E222C617E200B7208C /* Main.storyboard */; };
 		D55932E622C617E300B7208C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55932E522C617E300B7208C /* Assets.xcassets */; };
 		D55932E922C617E300B7208C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55932E722C617E300B7208C /* LaunchScreen.storyboard */; };
+		FA0DF5AF22CB4AB700F5E70D /* AvisTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DF5AE22CB4AB700F5E70D /* AvisTableViewController.swift */; };
 		FA53E63522C669DB0077B1E3 /* Avis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA53E63422C669DB0077B1E3 /* Avis.storyboard */; };
 		FA53E63722C66A140077B1E3 /* Lieu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA53E63622C66A140077B1E3 /* Lieu.storyboard */; };
 		FA53E63922C66AE20077B1E3 /* Profil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA53E63822C66AE20077B1E3 /* Profil.storyboard */; };
@@ -30,6 +31,7 @@
 		D55932E522C617E300B7208C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D55932E822C617E300B7208C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D55932EA22C617E300B7208C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0DF5AE22CB4AB700F5E70D /* AvisTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvisTableViewController.swift; sourceTree = "<group>"; };
 		FA53E63422C669DB0077B1E3 /* Avis.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Avis.storyboard; sourceTree = "<group>"; };
 		FA53E63622C66A140077B1E3 /* Lieu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lieu.storyboard; sourceTree = "<group>"; };
 		FA53E63822C66AE20077B1E3 /* Profil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profil.storyboard; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				D55932E022C617E200B7208C /* ViewController.swift */,
 				6EF6CEDB22CA080D005F60EE /* LieuViewController.swift */,
+				FA0DF5AE22CB4AB700F5E70D /* AvisTableViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				6E847BDE22C669A5000D8C50 /* donnees.swift in Sources */,
 				6EF6CEDC22CA080D005F60EE /* LieuViewController.swift in Sources */,
 				D55932E122C617E200B7208C /* ViewController.swift in Sources */,
+				FA0DF5AF22CB4AB700F5E70D /* AvisTableViewController.swift in Sources */,
 				D55932DF22C617E200B7208C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Entraide/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Entraide/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Entraide/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Entraide/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
