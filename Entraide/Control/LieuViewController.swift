@@ -8,14 +8,14 @@
 
 import UIKit
 
-class LieuViewController: UIViewController
+class LieuViewController: UITableViewController
 {
     @IBOutlet weak var photos: UIImageView!
     @IBOutlet weak var nomLieu: UILabel!
     @IBOutlet weak var note: UILabel!
     @IBOutlet weak var adresse: UILabel!
     @IBOutlet weak var descriptionLieu: UITextView!
-    @IBOutlet weak var criteres: UICollectionView!
+    
     var i = 0
     
     override func viewDidLoad()
@@ -38,14 +38,46 @@ class LieuViewController: UIViewController
         
         photos.image = lieux[i].photos[0]
         photos.contentMode = .scaleAspectFit
-        
 
+
+        
     }
 
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 10
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "commentaires", for: indexPath)
 
-    
-    
-    
+        /*
+        var formateur = "Formateur"
+        if !users[indexPath.row].isTrainer
+        {
+            formateur = "Apprenant"
+        }
+        
+        cell.textLabel?.text = formateur
+        cell.detailTextLabel?.text = "\(users[indexPath.row].firstName) \(users[indexPath.row].lastName), \(users[indexPath.row].age) ans"
+        
+        let list = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+        let choice = list.randomElement()!
+        
+        let image = UIImage(named: String(choice))
+        cell.imageView?.image = image
+        */
+        return cell
+ 
+    }
+
     /*
     // MARK: - Navigation
 
