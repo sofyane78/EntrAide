@@ -39,29 +39,7 @@ class LieuViewController: UIViewController
         photos.image = lieux[i].photos[0]
         photos.contentMode = .scaleAspectFit
         
-        //criteres.dataSource
-        
-        class CriteresTableViewController: UICollectionViewController
-        {
-            override func numberOfSections(in collectionView: UICollectionView) -> Int
-            {
-                return 4
-            }
-            
-            override func collectionView(_ collectionView: UICollectionView,
-                                         numberOfItemsInSection section: Int) -> Int
-            {
-                return 10
-            }
-            
-            override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath)
-                
-                //cell.imgView.image = lieux[0].photos[0]
-                return cell
-            }
-        }
-        
+
     }
 
 
