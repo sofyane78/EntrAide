@@ -10,11 +10,6 @@ import UIKit
 
 class AvisTableViewController: UITableViewController {
 
-    @IBOutlet weak var critereAvis: UITableViewCell!
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,16 +21,17 @@ class AvisTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+// non necessaire de donner le nombre de section et de rows in section car la Table view est STATIQUE
+    
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return 0
+//    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,5 +87,22 @@ class AvisTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var monFauteuil = false
+        var monAvis = AvisStruct(lieu: "", user: "", commentaire: "", date: "", note: "", fauteuil: false, calme: false, tamisee: false, securise: false)
+      
+        print(indexPath)
+        
+        
+        if indexPath == [2, 1]
+        {
+            monFauteuil = true
+            monAvis.fauteuil = monFauteuil
+
+        }
+        
+        print(monAvis.fauteuil)
+    }
 
 }
