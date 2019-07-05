@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Oy-z9-yY8">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Entr'Aide-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Entraide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q9L-LO-ZCh">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </mapView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KX-Zu-4J0">
+                                <rect key="frame" x="-628" y="199" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDx-6j-9zK">
+                                <rect key="frame" x="0.0" y="45" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q9L-LO-ZCh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QSY-Hd-A1f"/>
+                            <constraint firstAttribute="bottom" secondItem="Q9L-LO-ZCh" secondAttribute="bottom" id="iSq-G9-TgZ"/>
+                            <constraint firstItem="Q9L-LO-ZCh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l3u-4L-IMz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q9L-LO-ZCh" secondAttribute="trailing" id="r1A-Yv-CXo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Entr'Aide" id="XOD-x2-6BF">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="MQD-21-gjM">
+                            <connections>
+                                <action selector="searchButton:" destination="BYZ-38-t0r" id="nx8-vd-CbT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Profil" image="profilImage" landscapeImage="profilImage" largeContentSizeImage="profilImage" style="plain" id="1XJ-81-97d">
+                            <inset key="imageInsets" minX="-1" minY="0.0" maxX="-3" maxY="0.0"/>
+                            <button key="customView" opaque="NO" contentMode="topRight" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kdD-xD-6xP" userLabel="Profil">
+                                <rect key="frame" x="302" y="0.0" width="92" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" image="profilImage"/>
+                                <connections>
+                                    <segue destination="yia-d1-kBh" kind="show" identifier="goToProfile" id="kPD-ZI-u6g"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myMapView" destination="Q9L-LO-ZCh" id="qpo-xO-6q0"/>
+                        <segue destination="qm7-9V-n8l" kind="show" identifier="goToLieu" id="MOa-cq-GuS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852.17391304347836" y="137.94642857142856"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="9Rf-ha-sfa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="yia-d1-kBh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vB8-Tc-LGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1390" y="-192"/>
+        </scene>
+        <!--Lieu-->
+        <scene sceneID="eCr-k9-vtV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lieu" id="qm7-9V-n8l" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GW6-Vk-fbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="-10"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qIm-sw-T36">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Oy-z9-yY8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fyd-I8-mZZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="imh-rB-K4d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tre-ul-GbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profilImage" width="40" height="40"/>
+    </resources>
+</document>

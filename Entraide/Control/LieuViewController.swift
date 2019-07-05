@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LieuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+class LieuViewController: UIViewController
 {
     @IBOutlet weak var photos: UIImageView!
     @IBOutlet weak var tableView: UITableView!
@@ -19,87 +19,95 @@ class LieuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var securise: UIImageView!
     @IBOutlet weak var fauteuil: UIImageView!
     @IBOutlet weak var calme: UIImageView!
-    @IBOutlet weak var lieu: UIImageView!
+    @IBOutlet weak var tamisee: UIImageView!
     
-    
-    var i = 0
+    var monlieu: InfosLieu!
+    var listeCommentaires: [AvisStruct] = []
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        //pour test
-        let tempLieu = "L'Escale"
-        //
-        
-        while lieux[i].nom != tempLieu
-        {
-            i += 1
-        }
 
-        nomLieu.text = tempLieu
-        note.text = lieux[i].note
-        adresse.text = lieux[i].adresse
-        descriptionLieu.text = lieux[i].description
+        tableView.dataSource = self
+        tableView.delegate = self
+                
+        nomLieu.text = monlieu.nom
+        note.text = monlieu.note
+        adresse.text = monlieu.adresse
+        descriptionLieu.text = monlieu.description
         
-        photos.image = lieux[i].photos[0]
+        photos.image = monlieu.photos[0]
         photos.contentMode = .scaleAspectFit
-
-        if lieux[i].securise
+        
+        if monlieu.securise
         {
             securise.isHidden = false
         }
         
-        if lieux[i].calme
+        if monlieu.fauteuil
+        {
+            fauteuil.isHidden = false
+        }
+        
+        if monlieu.calme
         {
             calme.isHidden = false
         }
         
-    }
+        if monlieu.tamisee
+        {
+            tamisee.isHidden = false
+        }
+        
+        //for i in 0...listeAvisStruct.count
+        for i in 1...23
+        {
+            if listeAvisStruct[i].lieu == monlieu.nom
+            {
+                listeCommentaires.append(listeAvisStruct[i])
+            }
+        }
+        
+    } //fin viewDidLoad
+    
+} //fin classe
 
-    func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+
+// MARK: - fonction pour la TV -
+extension LieuViewController: UITableViewDataSource, UITableViewDelegate
+{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return listeCommentaires.count
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 10
-    }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "commentaires", for: indexPath)
-
-        /*
-        var formateur = "Formateur"
-        if !users[indexPath.row].isTrainer
-        {
-            formateur = "Apprenant"
-        }
-        
-        cell.textLabel?.text = formateur
-        cell.detailTextLabel?.text = "\(users[indexPath.row].firstName) \(users[indexPath.row].lastName), \(users[indexPath.row].age) ans"
-        
-        let list = [0, 1, 2, 3, 4, 5, 6, 7, 8]
-        let choice = list.randomElement()!
-        
-        let image = UIImage(named: String(choice))
-        cell.imageView?.image = image
-        */
+        let cell = tableView.dequeueReusableCell(withIdentifier: "commentaires", for: indexPath) as! HeadlineTableViewCell
+        cell.date.text = listeCommentaires[indexPath.row].date
+        cell.user.text = listeCommentaires[indexPath.row].user
+        cell.noteCommentaire.text = listeCommentaires[indexPath.row].note
+        cell.commentaire.text = listeCommentaires[indexPath.row].commentaire
+        //cell.user.select(self.performSegue(withIdentifier: "profil", sender: nil))
         return cell
- 
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+//    {
+//        if segue.identifier == "avis"
+//        {
+//            
+//        } else if segue.identifier == "profil"
+//        {
+//            var vc = segue.destination as! LieuViewController
+//        }
+//    }
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+class HeadlineTableViewCell: UITableViewCell
+{
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var user: UILabel!
+    @IBOutlet weak var noteCommentaire: UILabel!
+    @IBOutlet weak var commentaire: UILabel!
 }

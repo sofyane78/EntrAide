@@ -7,34 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E292E6222CE472200E5EE6B /* ProfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E292E6122CE472200E5EE6B /* ProfilVC.swift */; };
+		6E2DBB1722CDEA1C00F79AAF /* myAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2DBB1522CDEA1C00F79AAF /* myAnnotation.swift */; };
+		6E2DBB1A22CDEA4E00F79AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2DBB1922CDEA4E00F79AAF /* Main.storyboard */; };
+		6E2DBB2022CE074D00F79AAF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2DBB1F22CE074D00F79AAF /* Profile.storyboard */; };
 		6E847BDE22C669A5000D8C50 /* donnees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E847BDD22C669A5000D8C50 /* donnees.swift */; };
+		6EC433E922CE53440016ACAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC433E822CE53430016ACAE /* ViewController.swift */; };
+		6EC433EB22CE58060016ACAE /* AvisTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC433EA22CE58060016ACAE /* AvisTableViewController.swift */; };
+		6EC433ED22CE58510016ACAE /* Avis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC433EC22CE58510016ACAE /* Avis.storyboard */; };
 		6EF6CEDC22CA080D005F60EE /* LieuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF6CEDB22CA080D005F60EE /* LieuViewController.swift */; };
 		D55932DF22C617E200B7208C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55932DE22C617E200B7208C /* AppDelegate.swift */; };
-		D55932E122C617E200B7208C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55932E022C617E200B7208C /* ViewController.swift */; };
-		D55932E422C617E200B7208C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55932E222C617E200B7208C /* Main.storyboard */; };
 		D55932E622C617E300B7208C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55932E522C617E300B7208C /* Assets.xcassets */; };
 		D55932E922C617E300B7208C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55932E722C617E300B7208C /* LaunchScreen.storyboard */; };
-		FA0DF5AF22CB4AB700F5E70D /* AvisTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DF5AE22CB4AB700F5E70D /* AvisTableViewController.swift */; };
-		FA53E63522C669DB0077B1E3 /* Avis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA53E63422C669DB0077B1E3 /* Avis.storyboard */; };
 		FA53E63722C66A140077B1E3 /* Lieu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA53E63622C66A140077B1E3 /* Lieu.storyboard */; };
-		FA53E63922C66AE20077B1E3 /* Profil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA53E63822C66AE20077B1E3 /* Profil.storyboard */; };
 		FA53E63D22C9FEA80077B1E3 /* Avis.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53E63C22C9FEA80077B1E3 /* Avis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E292E6122CE472200E5EE6B /* ProfilVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilVC.swift; sourceTree = "<group>"; };
+		6E2DBB1522CDEA1C00F79AAF /* myAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myAnnotation.swift; sourceTree = "<group>"; };
+		6E2DBB1922CDEA4E00F79AAF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6E2DBB1F22CE074D00F79AAF /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		6E847BDD22C669A5000D8C50 /* donnees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = donnees.swift; sourceTree = "<group>"; };
+		6EC433E822CE53430016ACAE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6EC433EA22CE58060016ACAE /* AvisTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvisTableViewController.swift; sourceTree = "<group>"; };
+		6EC433EC22CE58510016ACAE /* Avis.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Avis.storyboard; sourceTree = "<group>"; };
 		6EF6CEDB22CA080D005F60EE /* LieuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LieuViewController.swift; sourceTree = "<group>"; };
 		D55932DB22C617E200B7208C /* Entraide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Entraide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55932DE22C617E200B7208C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D55932E022C617E200B7208C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D55932E322C617E200B7208C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D55932E522C617E300B7208C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D55932E822C617E300B7208C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D55932EA22C617E300B7208C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA0DF5AE22CB4AB700F5E70D /* AvisTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvisTableViewController.swift; sourceTree = "<group>"; };
-		FA53E63422C669DB0077B1E3 /* Avis.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Avis.storyboard; sourceTree = "<group>"; };
 		FA53E63622C66A140077B1E3 /* Lieu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lieu.storyboard; sourceTree = "<group>"; };
-		FA53E63822C66AE20077B1E3 /* Profil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profil.storyboard; sourceTree = "<group>"; };
 		FA53E63C22C9FEA80077B1E3 /* Avis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,10 +56,10 @@
 		6E847BDA22C61D7A000D8C50 /* Vues */ = {
 			isa = PBXGroup;
 			children = (
-				D55932E222C617E200B7208C /* Main.storyboard */,
+				6EC433EC22CE58510016ACAE /* Avis.storyboard */,
+				6E2DBB1922CDEA4E00F79AAF /* Main.storyboard */,
 				FA53E63622C66A140077B1E3 /* Lieu.storyboard */,
-				FA53E63422C669DB0077B1E3 /* Avis.storyboard */,
-				FA53E63822C66AE20077B1E3 /* Profil.storyboard */,
+				6E2DBB1F22CE074D00F79AAF /* Profile.storyboard */,
 			);
 			path = Vues;
 			sourceTree = "<group>";
@@ -71,9 +75,11 @@
 		6E847BDC22C61DC5000D8C50 /* Control */ = {
 			isa = PBXGroup;
 			children = (
-				D55932E022C617E200B7208C /* ViewController.swift */,
+				6E292E6122CE472200E5EE6B /* ProfilVC.swift */,
+				6E2DBB1522CDEA1C00F79AAF /* myAnnotation.swift */,
 				6EF6CEDB22CA080D005F60EE /* LieuViewController.swift */,
-				FA0DF5AE22CB4AB700F5E70D /* AvisTableViewController.swift */,
+				6EC433EA22CE58060016ACAE /* AvisTableViewController.swift */,
+				6EC433E822CE53430016ACAE /* ViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -169,10 +175,10 @@
 			files = (
 				D55932E922C617E300B7208C /* LaunchScreen.storyboard in Resources */,
 				FA53E63722C66A140077B1E3 /* Lieu.storyboard in Resources */,
-				FA53E63922C66AE20077B1E3 /* Profil.storyboard in Resources */,
-				FA53E63522C669DB0077B1E3 /* Avis.storyboard in Resources */,
+				6E2DBB1A22CDEA4E00F79AAF /* Main.storyboard in Resources */,
+				6EC433ED22CE58510016ACAE /* Avis.storyboard in Resources */,
+				6E2DBB2022CE074D00F79AAF /* Profile.storyboard in Resources */,
 				D55932E622C617E300B7208C /* Assets.xcassets in Resources */,
-				D55932E422C617E200B7208C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,9 +191,11 @@
 			files = (
 				FA53E63D22C9FEA80077B1E3 /* Avis.swift in Sources */,
 				6E847BDE22C669A5000D8C50 /* donnees.swift in Sources */,
+				6EC433EB22CE58060016ACAE /* AvisTableViewController.swift in Sources */,
+				6E2DBB1722CDEA1C00F79AAF /* myAnnotation.swift in Sources */,
 				6EF6CEDC22CA080D005F60EE /* LieuViewController.swift in Sources */,
-				D55932E122C617E200B7208C /* ViewController.swift in Sources */,
-				FA0DF5AF22CB4AB700F5E70D /* AvisTableViewController.swift in Sources */,
+				6E292E6222CE472200E5EE6B /* ProfilVC.swift in Sources */,
+				6EC433E922CE53440016ACAE /* ViewController.swift in Sources */,
 				D55932DF22C617E200B7208C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,14 +203,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D55932E222C617E200B7208C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D55932E322C617E200B7208C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D55932E722C617E300B7208C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

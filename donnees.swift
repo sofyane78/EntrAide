@@ -6,6 +6,7 @@
 //  Copyright © 2019 Sofyane Oulefki. All rights reserved.
 //
 
+import CoreLocation
 import Foundation
 import UIKit
 
@@ -21,10 +22,16 @@ struct InfosLieu
     var longitude: Double
     var description: String
     var note: String
+    var fauteuil: Bool
     var calme: Bool
     var tamisee: Bool
     var securise : Bool
     var photos: [UIImage?]  = []
+    
+    func getGPS() -> CLLocationCoordinate2D
+    {
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
 }
 
 var lieux = [
@@ -32,8 +39,9 @@ var lieux = [
                        adresse: "60 Boulevard Chanzy, 93100 Montreuil, tél 01 42 87 72 00",
                        latitude: 48.8585425,
                        longitude: 2.4330908,
-                       description: "Petit Resto convivial, qualité/prix raisonnable",
+                       description: "Petit Resto convivial, qualité/prix raisonnable \nCe restaurant offre une cuisine créative.",
                        note:  "⭐️⭐️⭐️⭐️",
+                       fauteuil: true,
                        calme: true,
                        tamisee : true,
                        securise : true,
@@ -45,6 +53,7 @@ var lieux = [
                        longitude: 2.4340799999999945,
                        description: "Établissement ouvert: 10:30 – 00:00/nCe bistro avec terrasse dans les arbres offre une cuisine créative, des brunchs et des rencontres vigneronnes.",
                        note:  "⭐️⭐️⭐️",
+                       fauteuil: true,
                        calme: true,
                        tamisee : false,
                        securise : true,
@@ -56,6 +65,7 @@ var lieux = [
                        longitude: 2.4347999999999956,
                        description: "Ce restaurant sert cuisine inventive et brunch dans un décor de bistrot rétro avec cheminée et patio ombragé.",
                        note:  "",
+                       fauteuil: true,
                        calme: true,
                        tamisee : true,
                        securise : true,
@@ -68,6 +78,7 @@ var lieux = [
                        longitude: 2.287592000000018,
                        description: "Ce théâtre moderne de 210 places accueille des spectacles divers, des séances jeune public et des festivals.",
                        note:  "⭐️⭐️",
+                       fauteuil: true,
                        calme: true,
                        tamisee : true,
                        securise : true,
@@ -79,6 +90,7 @@ var lieux = [
                        longitude: 2.433672,
                        description: "Salle de spectacles et cours de théâtre",
                        note:  "⭐️⭐️⭐️⭐️",
+                       fauteuil: true,
                        calme: true,
                        tamisee : true,
                        securise : true,
@@ -91,6 +103,7 @@ var lieux = [
                        longitude: 2.434529999999995,
                        description: "Piscine enfant de 25 m, et piscine olympique de 50 m",
                        note:  "⭐️⭐️⭐️",
+                       fauteuil: true,
                        calme: true,
                        tamisee : true,
                        securise : true,
@@ -102,6 +115,7 @@ var lieux = [
                        longitude: 2.4274962,
                        description: "Un grand parc au porte de Paris. De beaux points de vue. Très arboré avec des espaces naturels préservés. Plusieurs aires de jeux bien équipées. Accessible en métro et bus. De grands espaces verts pour jouer ou s'asseoir.",
                        note:  "⭐️⭐️⭐️⭐️",
+                       fauteuil: true,
                        calme: true,
                        tamisee : true,
                        securise : true,
@@ -113,6 +127,7 @@ var lieux = [
                        longitude: 2.4339977,
                        description: "Parc d'intérieur pour les enfants",
                        note:  "⭐️⭐️",
+                       fauteuil: true,
                        calme: true,
                        tamisee : true,
                        securise : true,
@@ -124,6 +139,7 @@ var lieux = [
                        longitude: 2.3478599999999687,
                        description: "Restaurant de tacos",
                        note:  "⭐️⭐️⭐️⭐️",
+                       fauteuil: true,
                        calme: true,
                        tamisee : true,
                        securise : true,
@@ -135,6 +151,7 @@ var lieux = [
                         longitude: 2.3456255,
                         description: "Récitals, comédies musicales et concerts variés dans une somptueuse salle de 1862 avec coupole et dorures.",
                         note:  "⭐️⭐️⭐️⭐️",
+                        fauteuil: true,
                         calme: true,
                         tamisee : true,
                         securise : true,
@@ -146,6 +163,7 @@ var lieux = [
                         longitude: 2.3487609,
                         description: "Unique partie restante d'une église du XVIe siècle détruite pendant la Révolution française.",
                         note:  "⭐️⭐️⭐️⭐️",
+                        fauteuil: true,
                         calme: true,
                         tamisee : true,
                         securise : true,
@@ -167,28 +185,31 @@ struct AvisStruct
     var calme: Bool
     var tamisee: Bool
     var securise : Bool
+    var photo: UIImage?
 }
 
 var listeAvisStruct = [
         AvisStruct(lieu: "L'Escale",
-         user: "Jean",
+         user: "Khalid",
          commentaire:"Mention spéciale pour l'accessibilité des personnes à mobilité réduite. Mais aussi pour les soirées peuplées par une clientèle d'habitués qui rassemble des personnes de tous horizons sociaux. De temps à autres des concerts le dimanche après midi ou en soirée",
          date: "06.07.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
-         user: "Victor",
+         user: "Khalid",
          commentaire:"Petit Resto convivial, qualité/prix raisonnable et accessible",
          date: "06.07.2019",
          note: "⭐️⭐️⭐️",
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Felix",
@@ -198,7 +219,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Bee",
@@ -208,7 +230,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Agnès",
@@ -218,7 +241,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Alisson",
@@ -228,7 +252,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Boris",
@@ -238,7 +263,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "José",
@@ -248,7 +274,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Paul",
@@ -258,7 +285,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Emmanuelle",
@@ -268,7 +296,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu:  "L'Escale",
          user: "Jacques",
@@ -278,7 +307,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Valentin",
@@ -288,7 +318,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Frank",
@@ -298,7 +329,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Sara",
@@ -308,7 +340,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Marie",
@@ -318,7 +351,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Sophie",
@@ -328,7 +362,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Marc",
@@ -338,7 +373,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Thomas",
@@ -348,7 +384,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "L'Escale",
          user: "Yoshi",
@@ -358,7 +395,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "La CaVe",
          user: "j'ai mangé dans ce restaurant hier soir et franchement, j'ai passé un super moment! Repas copieux et alléchant, personnel agréable et très avenant. Franchement, je vous le conseille vivement. Vous vivrez un excellent moment convivial et vous y reviendrez Merci encore à l'intégralité de l'équipe pour leur amabilité, leurs conseils, leur disponibilité. Vous avez embellit ma soirée qui était déjà très belle malgré le temps pluvieux.",
@@ -368,7 +406,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: false,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "La CaVe",
          user: "Eric",
@@ -378,17 +417,19 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: false,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "La CaVe",
-         user: "Jean",
+         user: "Khalid",
          commentaire:"Lieu branché, cadre atypique dans l'arrière boutique d'un cAvisStructte, j'ai trouvé la carte un peu surfaite pour les prix, c'est très bon, mais cela manque un peu de finesse a mon humble AvisStruct. A recommander tout de même",
          date: "05.07.2019",
          note: "⭐️⭐️",
          fauteuil: true,
          calme: false,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "La CaVe",
          user: "Eric",
@@ -398,7 +439,8 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: false,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "Théâtre Berthelot",
          user: "Eric",
@@ -408,15 +450,17 @@ var listeAvisStruct = [
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true),
+         securise: true,
+         photo: nil),
     
     AvisStruct(lieu: "Théâtre Berthelot",
-         user: "Jean",
+         user: "Khalid",
          commentaire:"Ce n est pas rien que d avoir un théâtre de quartiers... Chanceux les habitants de Montreuil !",
          date: "27.06.2019",
          note: "⭐️⭐️⭐️⭐️",
          fauteuil: true,
          calme: true,
          tamisee: true,
-         securise: true)
+         securise: true,
+         photo: nil),
 ]
